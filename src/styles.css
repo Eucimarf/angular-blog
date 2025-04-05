@@ -1,14 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  background-color: #111111;
-  color:white;
-  font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Geral */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Cor de fundo escura */
+  color: #f5f5f5; /* Texto claro */
+  margin: 0;
+  padding: 0;
+}
+/* Cabeçalho */
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
 }
 
-a{
+header h1 {
+  font-size: 3rem;
+  color: #f39c12; /* Cor dourada para o título */
+  margin: 0;
+}
+
+/* Cards */
+.card {
+  background-color: #1a1a1a;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Links e Botões */
+a, .btn {
   text-decoration: none;
+  color: #f39c12;
+}
+
+a:hover, .btn:hover {
+  color: #ff7f00;
+}
+
+/* Layout de Cards */
+.big-card, .small-card {
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.big-card {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .big-card, .small-card {
+    width: 100%;
+  }
 }
